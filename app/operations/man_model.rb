@@ -18,11 +18,13 @@ class ManModel < NSOperation
         # apple = Apple.create({
         #     name: "Apple #{i}"
         #                      })
-
         apple = man.apples.create({
             name: "Apple #{i}"
                              })
+        # reference ok
+        # cdq.save
       end
+      # reference explosion
       cdq.save
     end
     if @counter <= 3
