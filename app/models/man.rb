@@ -1,0 +1,2 @@
+class Man < CDQManagedObject
+end
