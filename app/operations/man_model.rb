@@ -15,15 +15,19 @@ class ManModel < NSOperation
         man = Man.create({
             name: "Man #{i}"
                    })
+        # 1.
         # apple = Apple.create({
         #     name: "Apple #{i}"
         #                      })
+        # 1. 3.
         apple = man.apples.create({
             name: "Apple #{i}"
                              })
+        # 3.
         # reference ok
         # cdq.save
       end
+      # 3.
       # reference explosion
       cdq.save
     end
